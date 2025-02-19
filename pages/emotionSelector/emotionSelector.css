@@ -1,16 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 100px);
     gap: 10px;
 }
+
 .option {
     width: 100px;
     height: 100px;
@@ -23,15 +26,46 @@ body {
     cursor: pointer;
     transition: border-color 0.3s;
 }
+
 .option img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .option.selected {
     border-color: #4caf50;
 }
+
 .option.disabled {
     cursor: not-allowed;
     opacity: 0.5;
+}
+
+/* Estilos para la barra de nivel */
+#level-container {
+    margin-top: 20px;
+    display: none; /* Oculto por defecto */
+    text-align: center;
+}
+
+#level-range {
+    width: 200px;
+}
+
+/* Botón de confirmación */
+#confirm-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+    border-radius: 5px;
+}
+
+#confirm-button.enabled {
+    background-color: #4caf50;
+    cursor: pointer;
 }
