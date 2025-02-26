@@ -10,3 +10,9 @@ body::before {
     filter: blur(5px);
     z-index: -1; /* Moves it behind the content */
 }
+
+
+
+
+
+
