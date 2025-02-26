@@ -7,6 +7,14 @@ body {
     background-color: #000
 }
 
+.conwi {
+    background-color: #ffffffb6;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: .5%;
+}
+
 .card {
     width: 350px;
     background-color: #efefef;
@@ -86,3 +94,18 @@ hr .new1 {
 .date {
     background-color: #ccc
 }
+
+
+body::before {
+    content: "";
+    position: fixed; /* Ensures it covers the whole screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../resources/general/Fondos-Kuni/Fondo\ 4.png') repeat center center;
+    background-size: cover;
+    filter: blur(1px);
+    z-index: -1; /* Moves it behind the content */
+}
+
