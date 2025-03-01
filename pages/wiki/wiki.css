@@ -1,3 +1,31 @@
+
+.Hapiness {
+    H1 {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 0vh;
+        margin: 0;
+    }
+ img {
+    text-align: center;
+    margin: auto;
+    
+ }
+    p {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        margin: 0;
+    }
+
+}
+
 body::before {
     content: "";
     position: fixed; /* Ensures it covers the whole screen */
@@ -7,10 +35,9 @@ body::before {
     height: 100%;
     background: url('../../resources/general/Fondos-Kuni/Fondo\ 1.png') repeat center center;
     background-size: cover;
-    filter: blur(5px);
+    filter: blur(1px);
     z-index: -1; /* Moves it behind the content */
 }
-
 
 
 
