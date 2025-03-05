@@ -5,73 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Grid Selection</title>
+    <title>Emotion Selector</title>
     <link rel="stylesheet" href="emotionSelector.css">
 </head>
 <body>
+
+    <!-- Header -->
     <div class="container">
         <header class="border-bottom lh-1 py-3">
-          <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-4 pt-1">
-              <a class="link-secondary" href="#">Follow Us</a>
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="link-secondary" href="#">Follow Us</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">KUNI</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="link-secondary" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+                    </a>
+                </div>
             </div>
-            <div class="col-4 text-center">
-              <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">KUNI</a>
-            </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-              <a class="link-secondary" href="#" aria-label="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
-              </a>
-            </div>
-          </div>
         </header>
-      
+
         <div class="nav-scroller py-1 mb-3 border-bottom">
-          <nav class="nav nav-underline justify-content-between">
-            <a class="nav-item nav-link link-body-emphasis active" href="../home/home.html">Home</a>
-            <a class="nav-item nav-link link-body-emphasis" href="../emotionSelector/emotionSelector.html">Quiz</a>
-            <a class="nav-item nav-link link-body-emphasis" href="../wiki/wiki.html">Wiki</a>
-            <a class="nav-item nav-link link-body-emphasis" href="../aboutUs/aboutUs.html">About Us</a>
-          </nav>
+            <nav class="nav nav-underline justify-content-between">
+                <a class="nav-item nav-link link-body-emphasis active" href="../home/home.html">Home</a>
+                <a class="nav-item nav-link link-body-emphasis" href="../emotionSelector/emotionSelector.html">Emotion Selector</a>
+                <a class="nav-item nav-link link-body-emphasis" href="../wiki/wiki.html">Wiki</a>
+                <a class="nav-item nav-link link-body-emphasis" href="../aboutUs/aboutUs.html">About Us</a>
+            </nav>
         </div>
     </div>
 
-    
-    <div class="grid">
-        <div class="option" data-id="1">
-            <img src="../../resources/emotions/Anticipation.png" alt="Anticipation">
+    <!-- Emotion Selection Container -->
+    <div class="container d-flex flex-column align-items-center">
+        <div class="grid">
+            <div class="option" data-id="1">
+                <img src="../../resources/emotions/Anticipation.png" alt="Anticipation">
+            </div>
+            <div class="option" data-id="2">
+                <img src="../../resources/emotions/Disgust.png" alt="Disgust">
+            </div>
+            <div class="option" data-id="3">
+                <img src="../../resources/emotions/Fear.png" alt="Fear">
+            </div>
+            <div class="option" data-id="4">
+                <img src="../../resources/emotions/Happiness.png" alt="Happiness">
+            </div>
+            <div class="option" data-id="5">
+                <img src="../../resources/emotions/Rage.png" alt="Rage">
+            </div>
+            <div class="option" data-id="6">
+                <img src="../../resources/emotions/Sadness.png" alt="Sadness">
+            </div>
+            <div class="option" data-id="7">
+                <img src="../../resources/emotions/Surprised.png" alt="Surprised">
+            </div>
+            <div class="option" data-id="8">
+                <img src="../../resources/emotions/Trust.png" alt="Trust">
+            </div>
         </div>
-        <div class="option" data-id="2">
-            <img src="../../resources/emotions/Disgust.png" alt="Disgust">
-        </div>
-        <div class="option" data-id="3">
-            <img src="../../resources/emotions/Fear.png" alt="Fear">
-        </div>
-        <div class="option" data-id="4">
-            <img src="../../resources/emotions/Happiness.png" alt="Happiness">
-        </div>
-        <div class="option" data-id="5">
-            <img src="../../resources/emotions/Rage.png" alt="Rage">
-        </div>
-        <div class="option" data-id="6">
-            <img src="../../resources/emotions/Sadness.png" alt="Sadness">
-        </div>
-        <div class="option" data-id="7">
-            <img src="../../resources/emotions/Surprised.png" alt="Surprised">
-        </div>
-        <div class="option" data-id="8">
-            <img src="../../resources/emotions/Trust.png" alt="Trust">
-        </div>
-    </div>    
 
-    <!-- Contenedor del nivel de emoción -->
-    <div id="level-container">
-        <label for="level-range">Nivel de emoción: <span id="level-value">1</span></label>
-        <input type="range" id="level-range" min="0" max="2" value="1">
+        <!-- Emotion Level Selector -->
+        <div id="level-container">
+            <label for="level-range">Emotion Level: <span id="level-value">1</span></label>
+            <input type="range" id="level-range" min="0" max="2" value="1">
+        </div>
+
+        <!-- Confirmation Button -->
+        <button id="confirm-button" disabled>Confirm Selection</button>
     </div>
-
-    <!-- Botón de confirmación -->
-    <button id="confirm-button" disabled>Confirmar selección</button>
 
     <script src="emotionSelector.js"></script>
 </body>
