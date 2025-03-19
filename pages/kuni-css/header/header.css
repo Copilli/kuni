@@ -1,0 +1,4 @@
+.nav-item.active {
+    font-weight: bold;
+    border-bottom: 3px solid #4caf50; /* Green underline for active page */
+}
