@@ -44,7 +44,7 @@ function displayEmotion(emotion) {
 
     // Update page content
     emotionTitle.textContent = emotion;
-    emotionImage.src = `../../resources/emotionsV2.0/${emotion}.png`;
+    emotionImage.src = `../resources/emotionsV2.0/${emotion}.png`;
     emotionDescription.textContent = emotionDescriptions[emotion] || "No description available.";
 }
 
