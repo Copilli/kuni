@@ -118,8 +118,8 @@ document.getElementById("toggle-version").addEventListener("change", function ()
     imageElements.forEach(img => {
         const emotionName = img.alt; // Extract emotion name from alt attribute
         img.src = isV2
-            ? `../../resources/emotionsV2.0/${emotionName}.png`
-            : `../../resources/emotions/${emotionName}.png`;
+            ? `../resources/emotionsV2.0/${emotionName}.png`
+            : `../resources/emotions/${emotionName}.png`;
     });
 });
 
