@@ -16,3 +16,14 @@
 .table tbody tr:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.1); /* Un poco de opacidad en filas pares */
 }
+
+.conwi {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: .5%;
+    width: 100%;
+    size: 100%;
+}
+
