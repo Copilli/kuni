@@ -21,7 +21,7 @@ function displayEmotion(emotion) {
   const emotionTitle = document.getElementById("emotion-title");
   const emotionImage = document.getElementById("emotion-image");
   const emotionDescription = document.getElementById("emotion-description");
-  const emotionAdvice = document.getElementById("emotion-description");
+  const emotionAdvice = document.getElementById("emotion-advice");
 
 
   // Emotion descriptions
@@ -62,7 +62,7 @@ function displayEmotion(emotion) {
 
 
   // Emotion advices <---
-  const emotionAdvice = {
+  const emotionAdvices = {
     Happiness: "Happiness is the feeling of joy and satisfaction.",
     Interest: "Interest is the emotion of curiosity and engagement.",
     Anticipation:"Anticipation is the feeling of expecting something exciting.",
@@ -102,7 +102,8 @@ function displayEmotion(emotion) {
   emotionImage.src = `../resources/emotionsV2.0/${emotion}.png`;
   emotionDescription.textContent =
     emotionDescriptions[emotion] || "No description available.";
-  // EmotionAdvice  <---
+  emotionAdvice.textContent =
+    emotionAdvices[emotion] || "No description available.";
 }
 
 // Function to return to the Emotion Selector
