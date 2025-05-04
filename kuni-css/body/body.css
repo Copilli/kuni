@@ -8,6 +8,13 @@ body::before {
     height: 100%;
     background: url('../../resources/general/Fondos-Kuni/Selva.png') repeat center center;
     background-size: cover;
-    filter: blur(4px);
+    filter: blur(6px);
     z-index: -1;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
 }
